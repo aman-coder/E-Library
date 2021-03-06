@@ -1,0 +1,138 @@
+html, body{
+  height: 100%;
+  margin:0px;
+  
+  
+}
+* {
+  box-sizing: border-box;
+}
+
+/* for the navigation bar */
+.container-1{
+  h1:{
+  text-align: center;
+  }
+}
+.nav{
+  background: rgba(202, 158, 158, 0.401);
+
+  
+  
+}
+a:link, a:visited {
+  background-color: #a48e8d2f;
+  color: white;
+  padding: 0.5rem 0.9375rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(191, 174, 174);
+}
+/* colors for links at navbar */
+.text-primary{
+  color: rgba(0, 0, 0, 0.258);
+}
+.text-secondary{
+  color: rgba(0, 0, 0, 0.469);
+}
+/* for the table */
+
+.col{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items:baseline ;
+  flex-basis: auto;
+  align-self: baseline;
+  margin-top:0.3125rem;
+  margin-left: 0.3125rem;
+  margin-right: 0.3125rem;
+  margin-bottom: 0.3125rem;
+
+}
+.image{
+  height:22.5rem;
+  width: 15rem;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
+  margin-left: 0.3125rem;
+  margin-right: 0.3125rem;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.container{
+  position: relative;
+  width: auto;
+
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text {
+  background-color: #968c8c00;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  padding: 0.75rem  1.25rem;
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+/* add page  */
+
+.bigimg {
+  /* The image used */
+ 
+
+  min-height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.form{
+
+  margin-top: 50px;
+}
+/* read page */
+.read{
+  padding-top:0.75rem;
+  height: 100%;
+}
+.card{
+  height: 100%;
+}
+.card-img{
+
+  height:22.5rem;
+  width: 15rem;
+  padding-left: 22px;
+}
+.card-title{
+  margin-top: 20px;
+}
+.card-text-1{
+    padding-left: 30px;
+    text-align: center;
+}
+
