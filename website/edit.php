@@ -29,7 +29,7 @@ if(isset($_POST['name']) && isset($_POST['auth_name']) && isset($_POST['img']) &
 			</div>
 		<?php endif; ?>
 		<h3 class="edit">Edit Details!</h3>
-			<form method="post"  style="max-width: 400px; margin:20px auto; padding:20px;">
+			<form method="post"  style="max-width: 500px; margin:20px auto; padding:20px; background-color:hsla(120,100%,75%,0.3);">
 					<br><br>
 					
 					<tr>

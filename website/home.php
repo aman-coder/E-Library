@@ -17,6 +17,9 @@
 
 	
 ?>
+	<div class="imagesrotation">
+		
+	</div>
 	<div class="main">
 	<?php foreach($users as $user): ?>
 	<div class="cards">
