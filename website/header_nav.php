@@ -1,8 +1,4 @@
-<div class="container-1">
-    <div class="row">
-        <h1><center>E-Library</center></h1>
-    </div>
-</div>
+<h1 class="title">E-Library</h1>
 <div class="nav">
-        &nbsp;<a href="home.php" class ="text-primary">Home</a>&nbsp;&nbsp;<a href="add.php" class="text-secondary">Add</a>
+        &nbsp;<a href="home.php" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Home</a><a href="add.php" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">ADD</a>
 </div>

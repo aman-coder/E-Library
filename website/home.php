@@ -17,27 +17,29 @@
 
 	
 ?>
-	<div class="col">
+	<div class="main">
 	<?php foreach($users as $user): ?>
-	<div class="container">
+	<div class="cards">
+	
 		<div class="image">
-		<img class="image" src="<?= htmlspecialchars($user->img);?>" alt=""></div>
-		<div class="middle">
-		<div class="text"><?= htmlspecialchars($user->name); ?><br> <?= htmlspecialchars($user->auth_name);?><br>
-		<a href="read.php?id=<?php echo($user->id); ?>">Read</a></div>
-		</div></div>
+		<img src="<?= htmlspecialchars($user->img);?>" alt="">
+		</div>
+		<div class="name">
+			<h5>Name:-<?= htmlspecialchars($user->name); ?></h5>
+			<h6><br> <?= htmlspecialchars($user->auth_name);?><br></h6>
+		</div>
+		<div class="des">
+		<a href="read.php?id=<?php echo($user->id); ?>" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Read More</a>
+		</div>
 		
-		
+	</div>
 	<?php endforeach; ?>
+			
 	</div>
 	
-	
-	
-	
 								
-		
+	
 		
 
-<?php 
-		
-		 require'footer.php'; ?>
+<?php
+	 require 'footer.php'; ?>

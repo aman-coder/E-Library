@@ -28,37 +28,40 @@ if(isset($_POST['name']) && isset($_POST['auth_name']) && isset($_POST['img']) &
 				<?= $message;?>
 			</div>
 		<?php endif; ?>
-		<form method="post">
-
-					<table border="2" align="center" cellpadding="5" cellspacing="5">
+		<h3 class="edit">Edit Details!</h3>
+			<form method="post"  style="max-width: 400px; margin:20px auto; padding:20px;">
+					<br><br>
+					
 					<tr>
-					<td> Enter Name :</td>
+					<td> Enter Name :</td><br>
 					<td> <input value="<?= $users->name;?>" type="text" name="name" size="48"> </td>
-					</tr>
+					</tr><br><br>
 					<tr>
-					<td> Enter Author name :</td>
+					<td> Enter Author name :</td><br>
 					<td> <input value="<?= $users->auth_name;?>" type="text" name="auth_name" size="48"> </td>
-					</tr>
+					</tr><br><br>
 					<tr>
-					<td> Enter img url :</td>
+					<td> Enter img url :</td><br>
 					<td> <input value="<?= $users->img;?>" type="text" name="img" size="48"> </td>
-					</tr>
+					</tr><br><br>
 					<tr>
-					<td> Enter description :</td>
-					<td> <input value="<?= $users->dscription;?>" type="text" name="dscription" size="48"> </td>
-					</tr>
-					<tr>
-					<td> Enter Pdf-link: </td>
+					<td> Enter Pdf-link: </td><br>
 					<td> <input value="<?= $users->pdf_link;?>" type="text" name="pdf_link" size="48"> </td>
-					</tr>
+					</tr><br><br>
+					<tr>
+					<td> Enter description :</td><br>
+					<td> <input value="<?= $users->dscription;?>" type="text" name="dscription" size="48"> </td>
+					</tr><br><br>
+					
 					<tr>
 					<td></td>
 					<td>
-					<input type="submit" actionn = "home1.php" value="submit">
-					<input type="reset" value="Reset">
+					<input type="submit" class="btn btn-primary btn-sm active" actionn = "home1.php" value="submit">
+					&nbsp;&nbsp;
+					<input type="reset" class="btn btn-primary btn-sm active" value="Reset">
 					</td>
 					</tr>
-					</table>
+					
 
 
 <?php require 'footer.php'; ?>
