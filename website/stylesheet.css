@@ -5,8 +5,9 @@
  
 }
 body{
+  
   font-family: Arial;
-  background-color: whitesmoke;
+  background-color: rgb(255, 204, 204);
 }
 
 .title{
@@ -16,27 +17,34 @@ body{
   letter-spacing: 5px;
   color: brown;
   font-weight: bold;
+  
 }
 .title1{
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   font-family: fantasy;
   font-weight: bold;
+  
 }
 .title-read{
   text-align: center;
-  padding: 30px;
+  padding: 20px;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 35px;
+  box-shadow: 2px 2px 2px rgb(157, 155, 155);
 }
 .edit{
   text-align: center;
   padding: 20px;
   font-family: fantasy;
   font-weight: bold;
+  box-shadow: 2px 2px 2px rgb(157, 155, 155);
   text-decoration-color: darkred;
 }
 .nav{
 
-  background-color:rgba(192,192,192,0.3);
+  background-color:rgba(236, 167, 120, 0.265);
   height: 29px;
   width: 100%;
 }
@@ -44,6 +52,7 @@ body{
 {
   height: 29px;
   margin-left:10px;
+  box-shadow: 2px 2px 2px rgb(157, 155, 155);
 }
 
 /* for the flex of the books in the home page */
@@ -78,7 +87,7 @@ body{
 }
 /* read page */
 .read{
-  padding:20px;
+  padding:10px;
 }
 .card-img{
   display: block;
@@ -94,7 +103,7 @@ body{
     text-align: center;
   }
   .card-text-1{
-    border: 5px solid black;
+    /* border: 5px solid black; */
     background-color: cornsilk;
   }
   .basse{
@@ -127,11 +136,15 @@ body{
   font-size: 10px;
   margin-left:10px;
 }
+.footer{
+  position: fixed;
+  height: 20px;
+}
 
 }
 /* delete modal */
 .cancelbtn, .deletebtn {
-  float: inline-start;
+  float: static;
   width: 50%;
 }
 
@@ -159,10 +172,9 @@ body{
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #857b409e;
+  background-color: #fbe8e85a;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 50%; /* Could be more or less, depending on screen size */
 }
 
 /* Style the horizontal ruler */
@@ -183,7 +195,7 @@ hr {
 
 .close:hover,
 .close:focus {
-  color: #f44336;
+  color: #fffaf963;
   cursor: pointer;
 }
 .clearfix{
@@ -202,4 +214,15 @@ hr {
   .cancelbtn, .deletebtn {
     width: 100%;
   }
+}
+/* for fixed footer */
+.footer {
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(171, 140, 140, 0.632);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  height: 30px;
 }

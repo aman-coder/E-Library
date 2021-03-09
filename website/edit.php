@@ -17,7 +17,10 @@ if(isset($_POST['name']) && isset($_POST['auth_name']) && isset($_POST['img']) &
 	$statement = $conn->prepare($sql);
 	if ($statement->execute([':name'=> $name, 'auth_name'=> $auth_name, 'img'=> $img, 'dscription'=>$dscription, 'pdf_link'=> $pdf_link, ':id' => $id]))
 	{
-		header("location:home.php");
+		echo '<script>
+		alert("Book is successfully Edited");
+		window.location.href="home.php";
+		</script>';
 	}
 
 //------------------------------------form to b changed -------------------------------------------
@@ -56,9 +59,9 @@ if(isset($_POST['name']) && isset($_POST['auth_name']) && isset($_POST['img']) &
 					<tr>
 					<td></td>
 					<td>
-					<input type="submit" class="btn btn-primary btn-sm active" actionn = "home1.php" value="submit">
-					&nbsp;&nbsp;
-					<input type="reset" class="btn btn-primary btn-sm active" value="Reset">
+					<center><input type="submit" class="btn btn-primary btn-sm active" actionn = "home1.php" value="submit"></center>
+				
+					
 					</td>
 					</tr>
 					
