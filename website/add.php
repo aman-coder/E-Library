@@ -14,8 +14,10 @@ if(isset($_POST['name']) && isset($_POST['auth_name']) && isset($_POST['img']) &
 	$statement = $conn->prepare($sql);
 	if ($statement->execute([':name'=> $name, 'auth_name'=> $auth_name, 'img'=> $img, 'dscription'=>$dscription, 'pdf_link'=> $pdf_link]))
 	{
-		$message = 'data inserted succesfully';
-		header("Location: home.php");
+		echo '<script>
+		alert("Book is successfully Deleted");
+		window.location.href="home.php";
+		</script>';
 	}
 
 }

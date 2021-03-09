@@ -32,7 +32,7 @@ if(isset($_POST['name']) && isset($_POST['auth_name']) && isset($_POST['img']) &
 			</div>
 		<?php endif; ?>
 		<h3 class="edit">Edit Details!</h3>
-			<form method="post"  style="max-width: 500px; margin:20px auto; padding:20px; background-color:hsla(120,100%,75%,0.3);">
+			<form class="table" method="post"  style="max-width: 90%; margin:20px auto; padding:20px; background-color:hsla(120,100%,75%,0.3);">
 					<br><br>
 					
 					<tr>
@@ -45,11 +45,11 @@ if(isset($_POST['name']) && isset($_POST['auth_name']) && isset($_POST['img']) &
 					</tr><br><br>
 					<tr>
 					<td> Enter img url :</td><br>
-					<td> <input value="<?= $users->img;?>" type="text" name="img" size="48"> </td>
+					<td> <input value="<?= $users->img;?>" type="url" name="img" size="48"> </td>
 					</tr><br><br>
 					<tr>
 					<td> Enter Pdf-link: </td><br>
-					<td> <input value="<?= $users->pdf_link;?>" type="text" name="pdf_link" size="48"> </td>
+					<td> <input value="<?= $users->pdf_link;?>" type="url" name="pdf_link" size="48"> </td>
 					</tr><br><br>
 					<tr>
 					<td> Enter description :</td><br>

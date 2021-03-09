@@ -24,7 +24,7 @@ $users = $statement->fetch(PDO::FETCH_OBJ);
 			<p class="card-text-1"><?= htmlspecialchars($users->dscription)?><br></p>
 			<div class="basse">
 			<!-- the whole button part is written here like deletion, edition, read so for that -->
-			<center><a href="<?= htmlspecialchars($users->pdf_link); ?>" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Read</a>
+			<center><a href="<?= htmlspecialchars($users->pdf_link); ?>"  target="_blank " rel="noopener noreferrer" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Read</a>
 			<a href="edit.php?id=<?php echo($users->id); ?>" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Edit</a>
 			
 			<button onclick="document.getElementById('id01').style.display='block'" class="btn btn-danger btn-sm active">Delete</button></center></div>
@@ -37,7 +37,7 @@ $users = $statement->fetch(PDO::FETCH_OBJ);
 				<p>Are you sure you want to delete your account?</p>
 
 				<div class="clearfix">
-				<a href="read.php?id=<?php echo($users->id); ?>" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Cancel</a></div>
+				<a  href="read.php?id=<?php echo($users->id); ?>"  class="btn btn-primary btn-sm active"  rel="noopener noreferrer" role="button" aria-pressed="true">Cancel</a></div>
 					<a href="delete.php?id=<?php echo($users->id); ?>" class="btn btn-danger btn-sm active" role="button" aria-pressed="true">Delete</a></div>
 				</div>
 				

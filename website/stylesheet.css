@@ -140,6 +140,17 @@ body{
   position: fixed;
   height: 20px;
 }
+.table{
+  width: 90%%;
+}
+  
+  input[type=text], textarea {
+    width:85%;
+}
+input[type=url], textarea {
+  width:85%;
+}
+
 
 }
 /* delete modal */
