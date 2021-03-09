@@ -227,13 +227,3 @@ hr {
   }
 }
 /* for fixed footer */
-.footer {
-  position:fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(171, 140, 140, 0.632);
-  color: rgb(0, 0, 0);
-  text-align: center;
-  height: 30px;
-}
