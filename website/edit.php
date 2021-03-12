@@ -31,8 +31,8 @@ if(isset($_POST['name']) && isset($_POST['auth_name']) && isset($_POST['img']) &
 				<?= $message;?>
 			</div>
 		<?php endif; ?>
-		<h3 class="edit">Edit Details!</h3>
-			<form class="table" method="post"  style="max-width: 90%; margin:20px auto; padding:20px; background-color:hsla(120,100%,75%,0.3);">
+		<h1 class="edit">Edit Details!</h1>
+			<form class="table" method="post"  style=" max-width:500px; margin:20px auto; padding:20px; background-color:hsla(120,100%,75%,0.3);">
 					<br><br>
 					
 					<tr>
@@ -59,7 +59,7 @@ if(isset($_POST['name']) && isset($_POST['auth_name']) && isset($_POST['img']) &
 					<tr>
 					<td></td>
 					<td>
-					<center><input type="submit" class="btn btn-primary btn-sm active" actionn = "home1.php" value="submit"></center>
+					<center><input type="submit" class="btn btn-primary btn-lg active" actionn = "home1.php" value="submit"></center>
 				
 					
 					</td>
