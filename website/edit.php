@@ -19,20 +19,16 @@ if(isset($_POST['name']) && isset($_POST['auth_name']) && isset($_POST['img']) &
 	{
 		echo '<script>
 		alert("Book is successfully Edited");
-		window.location.href="home.php";
+		window.location="bookread.php?<?php echo($users->id);?>";
 		</script>';
 	}
-
+	
 //------------------------------------form to b changed -------------------------------------------
 }
 ?><?php require 'header.php'; ?>
-		<?php if(!empty($message)):?>
-			<div class ="alert alert-success">
-				<?= $message;?>
-			</div>
-		<?php endif; ?>
+		
 		<h1 class="edit">Edit Details!</h1>
-			<form class="table" method="post"  style=" max-width:500px; margin:20px auto; padding:20px; background-color:hsla(120,100%,75%,0.3);">
+			<form class="table" method="post" onsubmit="return alertedit()" style=" max-width:500px; margin:20px auto; padding:20px; background-color:hsla(120,100%,75%,0.3);">
 					<br><br>
 					
 					<tr>
@@ -59,11 +55,12 @@ if(isset($_POST['name']) && isset($_POST['auth_name']) && isset($_POST['img']) &
 					<tr>
 					<td></td>
 					<td>
-					<center><input type="submit" class="btn btn-primary btn-lg active" actionn = "home1.php" value="submit"></center>
+					<center><input type="submit" class="btn btn-primary btn-lg active" value="submit"></center>
 				
 					
 					</td>
 					</tr>
+					
 					
 
 
