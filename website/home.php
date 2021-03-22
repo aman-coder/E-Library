@@ -17,7 +17,7 @@
 		
 	</div>
 	<!-- <marquee behavior="alternate" onmouseover="stop()" onmouseout="start()"><h1 style="padding:5px; font-weight: bold;">Welcome to E-Library</h1></marquee> -->
-	<h1 style="text-align:center; padding:5px; font-weight: bold;">Welcome to E-Library</h1>
+	<h1 style="text-align:center; padding:5px; font-weight: bold; ">Welcome to E-Library</h1>
 	<div class="main">
 	<?php foreach($users as $user): ?>
 	<div class="cards">

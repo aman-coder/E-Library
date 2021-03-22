@@ -9,8 +9,18 @@ $statement->execute([':id'=> $id]);
 $users = $statement->fetch(PDO::FETCH_OBJ);
 
 ?>
+<script type="text/JavaScript">
+			function alertedit(){
+		   alert("Book is successfully Deleted");
+		   //window.location.href="bookread.php";
+		   window.open('home.php','_self');
+		   return false;
+		   }
+		   </script>
 
 <?php require 'header.php'; ?>
+<section>
+
 <h1 style="text-align:center;padding:5px; font-weight: bold;">Welcome to Reading Page</h1>
 <div class="row">
 
@@ -30,17 +40,19 @@ $users = $statement->fetch(PDO::FETCH_OBJ);
 			<div id="id01" class="modal">
 			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 			<!--modal for deletion confirmation as needed -->
-			<form class="modal-content" action="/action_page.php">
+			<form class="modal-content" action="/action_page.php" >
 				<div class="container">
 				<h1>Delete Book</h1>
 				<p>Are you sure you want to delete Book?</p>
 
 				<div class="clearfix">
 				<a  href="bookread.php?id=<?php echo($users->id); ?>"  class="btn btn-primary btn-lg active"  rel="noopener noreferrer" role="button" aria-pressed="true">Cancel</a></div>
-					<a href="delete.php?id=<?php echo($users->id); ?>" class="btn btn-danger btn-lg active" rel="noopener noreferrer" role="button" aria-pressed="true">Sure</a></div>
+					<a href="delete.php?id=<?php echo($users->id); ?>"   class="btn btn-danger btn-lg active" rel="noopener noreferrer" role="button" aria-pressed="true" onclick="alertedit()">Sure</a></div>
 				</div>
 				
 			</form>  
  </div>
 </div>
+</section>
+
 <?php require 'footer.php';?>

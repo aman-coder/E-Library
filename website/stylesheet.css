@@ -7,7 +7,16 @@
 body{
   
   font-family: Arial;
-  background-color: rgba(245, 191, 191, 0.898);
+  /* background-image: url("backgroud.jpg"); */
+  background-color: blanchedalmond;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  
+}
+.tt{
+  font-family: fantasy;
+  font-weight: bold;
 }
 /* for navbar  */
 .topnav {
@@ -31,7 +40,7 @@ body{
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #af4c75;
   color: white;
 }
 
@@ -77,13 +86,15 @@ body{
 }
 .main1 {
   flex:40%;
-  background-color: rgb(230, 207, 207);
+  background-color: rgba(231, 195, 195, 0.632);
   padding: 5px;
   overflow-x: hidden;
+  border-radius: 50px;
 }
 @media screen and (max-width: 600px) {
   .row, .main1 {   
     flex-direction: column;
+
     
   }
 }
@@ -136,6 +147,7 @@ body{
   width: 20%;
   border-radius: 5px;
   margin: 20px;
+  background-color: rgba(255, 255, 255, 0);
 
 }
 .cards:hover{
@@ -183,7 +195,7 @@ body{
 /* for mobile phone */
 @media only screen and (max-width:640px){
   body{
-  background: rgba(201, 137, 137, 0.748);
+ background-color: bisque;
   }
   .title{
     font-size: 25px;
@@ -216,6 +228,7 @@ body{
   
   input[type=text], textarea {
     width:85%;
+    
 }
 input[type=url], textarea {
   width:85%;
@@ -247,13 +260,13 @@ input[type=url], textarea {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: #c6c6c61a;
+  background-color: #807a7a9c;
   padding-top: 50px;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fbe8e85a;
+  background-color: #ec9d9def;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   width: 50%; /* Could be more or less, depending on screen size */
 }
@@ -266,12 +279,12 @@ hr {
 
 /* The Modal Close Button (x) */
 .close {
-  position: absolute;
+  position: relative;
   right: 35px;
   top: 15px;
   font-size: 40px;
   font-weight: bold;
-  color: #f1f1f1;
+  color: #b15959;
 }
 
 .close:hover,
@@ -297,3 +310,13 @@ hr {
   }
 }
 
+/* for add form */
+.addform{
+  align-items: center;
+  max-width:500px; 
+  margin:20px auto;
+   height:500px; 
+   padding:20px; 
+   background-color:rgba(0, 255, 0, 0.3);
+}
+/* ending add form */

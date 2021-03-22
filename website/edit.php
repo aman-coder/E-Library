@@ -16,23 +16,27 @@ if(isset($_POST['name']) && isset($_POST['auth_name']) && isset($_POST['img']) &
 	$sql = 'UPDATE  book SET name =:name, auth_name=:auth_name,img=:img, dscription=:dscription, pdf_link=:pdf_link WHERE id=:id';
 	$statement = $conn->prepare($sql);
 	if ($statement->execute([':name'=> $name, 'auth_name'=> $auth_name, 'img'=> $img, 'dscription'=>$dscription, 'pdf_link'=> $pdf_link, ':id' => $id]))
-	{
-		echo '<script>
+	{?>
+		<script type="text/JavaScript">
+	     function alertedit(){
 		alert("Book is successfully Edited");
-		window.location="bookread.php?<?php echo($users->id);?>";
-		</script>';
-	}
+		//window.location.href="bookread.php";
+		window.open('bookread.php?id=<?php echo($users->id);?>','_self');
+		return false;
+		}
+		</script>
+	<?php }
 	
 //------------------------------------form to b changed -------------------------------------------
 }
 ?><?php require 'header.php'; ?>
 		
 		<h1 class="edit">Edit Details!</h1>
-			<form class="table" method="post" onsubmit="return alertedit()" style=" max-width:500px; margin:20px auto; padding:20px; background-color:hsla(120,100%,75%,0.3);">
+			<form class="table addform" method="post" onsubmit="return alertedit()">
 					<br><br>
 					
 					<tr>
-					<td> Enter Name :</td><br>
+					<td>Book Name :</td><br>
 					<td> <input value="<?= $users->name;?>" type="text" name="name" size="48"> </td>
 					</tr><br><br>
 					<tr>
