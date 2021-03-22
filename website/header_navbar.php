@@ -1,6 +1,6 @@
 
 <div class="topnav" id="myTopnav">
-  <a href="home.php" class="active">E-Library</a>
+  <a href="index.php" class="active">E-Library</a>
   
   <a href="add.php">Add</a>
  

@@ -8,7 +8,7 @@
 
 		if($statament->execute([':id' => $id])):
 			
-			header("Location: home.php");
+			header("Location: index.php");
 		
 	 endif; ?>
 
